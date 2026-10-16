@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Management System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f766e, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .intro h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #0f766e;
+            margin-bottom: 10px;
+        }
+
+        .technology {
+            background: white;
+            margin-top: 25px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .technology h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .technology span {
+            display: inline-block;
+            background: #e8f1ff;
+            color: #1d4ed8;
+            padding: 9px 15px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .back-btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Hospital Management System</h1>
+        <p>Simple and efficient hospital management solution</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Project Overview -->
+        <div class="intro">
+            <h2>Project Overview</h2>
+
+            <p>
+                Hospital Management System is a web-based project designed
+                to manage hospital information in an organized and
+                user-friendly way. It can be used to manage patients,
+                doctors and appointments.
+            </p>
+        </div>
+
+        <!-- Features -->
+        <div class="cards">
+
+            <div class="card">
+                <h3>Patient Management</h3>
+                <p>
+                    Manage patient information and maintain patient records.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Doctor Management</h3>
+                <p>
+                    Store and manage doctor information and details.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Appointment Management</h3>
+                <p>
+                    Manage appointments between doctors and patients.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Dashboard</h3>
+                <p>
+                    Display important hospital information in one place.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Technologies -->
+        <div class="technology">
+
+            <h2>Technologies Used</h2>
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>MySQL</span>
+
+        </div>
+
+        <!-- Back Button -->
+        <a href="/" class="back-btn">
+            ← Back to Portfolio
+        </a>
+
+    </div>
+
+    <footer>
+        © 2026 Hospital Management System
+    </footer>
+
+</body>
+</html>

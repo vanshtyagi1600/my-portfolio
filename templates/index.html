@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh Tyagi Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Vansh Tyagi</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Vansh Tyagi</span></h1>
+            <h2></h2>
+
+            <p>
+                I build modern web applications using Python, Django,
+                MySQL, HTML, CSS and JavaScript.
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn2">Contact Me</a>
+        </div>
+
+        
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Python Full Stack Developer currently learning
+            full stack development and building projects.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skill">
+            <p>Python</p>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>Django</p>
+            <div class="bar"><span style="width:75%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>MySQL</p>
+            <div class="bar"><span style="width:70%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+
+        
+        <div class="skill">
+            <p>DSA</p>
+            <div class="bar"><span style="width:65%"></span></div>
+        </div>
+
+
+        
+        <div class="skill">
+            <p>Gen Rative</p>
+            <div class="bar"><span style="width:88%"></span></div>
+        </div>
+        
+        <div class="skill">
+            <p>React.js</p>
+            <div class="bar"><span style="width:75%"></span></div>
+        </div>
+
+        
+        <div class="skill">
+            <p>Bootstrap</p>
+            <div class="bar"><span style="width:68%"></span></div>
+        </div>
+
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+            <h3>Snake Game</h3>
+            <p>Snake game built using HTML, CSS and JavaScript.</p>
+            <a href="/snake" class="btn">View Details</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Calculator App</h3>
+            <p>Calculator built using HTML, CSS and JavaScript.</p>
+            <a href="/calculator" class="btn">View Details</a>
+        </div>
+
+        
+        <div class="project-card">
+            <h3>Hospital management system</h3>
+            <p>hospital built using HTML, CSS , python, Mysql ,django and JavaScript.</p>
+            <a href="/hospital" class="btn">View Details</a>
+        </div>
+        
+        <div class="project-card">
+            <h3>Collage management system</h3>
+            <p>collage built using HTML, CSS , python, Mysql ,django and JavaScript.</p>
+            <a href="/collage" class="btn">View Details</a>
+        </div>
+        
+        <div class="project-card">
+            <h3> Sarkari result </h3>
+            <p>Sarkari result built using HTML, CSS , python, Mysql ,django and JavaScript.</p>
+            <a href="/sarkari-result" class="btn">View Details</a>
+        </div>
+
+
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form method="POST" action="/contact">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
